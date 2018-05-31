@@ -3,3 +3,37 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+
+nav {
+    height: 75px;
+    background-color: whitesmoke
+}
+
+.nav-container {
+    display: flex;
+}
+
+nav a {
+    line-height: 45px;
+    margin: 15px 0;
+    padding: 0 15px;
+}
+
+footer {
+    height: 75px;
+    background: whitesmoke;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-container {
+    display: flex;
+    height: 100%;
+}
+
+.footer-container div {
+    margin: auto;
+}
