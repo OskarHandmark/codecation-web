@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import faHome from '@fortawesome/fontawesome-free-solid/faHome';
-<<<<<<< HEAD:src/Airbnb.js
 import YouTube from 'react-youtube';
-import images from './img/airbnb';
-=======
 import images from './img/accommodation';
->>>>>>> Scrollable anchors added + airbnb refactored to accomodation:src/Accommodation.js
 
 class Accommodation extends Component {
     render() {
