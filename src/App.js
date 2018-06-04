@@ -5,6 +5,7 @@ import Flights from './Flights';
 import Airbnb from './Airbnb';
 import Footer from './Footer';
 import Agenda from './Agenda';
+import Food from './Food';
 
 class App extends Component {
     render() {
@@ -15,6 +16,7 @@ class App extends Component {
                     <Airbnb />
                     <Flights />
                     <Agenda />
+                    <Food />
                 </div>
                 <Footer />
             </React.Fragment>
