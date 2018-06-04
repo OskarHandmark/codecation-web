@@ -4,15 +4,17 @@ import Navigation from './Navigation';
 import Flights from './Flights';
 import Airbnb from './Airbnb';
 import Footer from './Footer';
+import Agenda from './Agenda';
 
 class App extends Component {
     render() {
         return (
             <React.Fragment>
                 <Navigation />
-                <div style={{ height: 700 }}>
+                <div className="main">
                     <Airbnb />
                     <Flights />
+                    <Agenda />
                 </div>
                 <Footer />
             </React.Fragment>
