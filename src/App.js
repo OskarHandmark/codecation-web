@@ -12,12 +12,12 @@ class App extends Component {
         return (
             <React.Fragment>
                 <Navigation />
-                <div className="main">
+                <main>
                     <Airbnb />
                     <Flights />
                     <Agenda />
                     <Food />
-                </div>
+                </main>
                 <Footer />
             </React.Fragment>
         );
