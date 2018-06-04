@@ -9,8 +9,7 @@ class Accommodation extends Component {
         return (
             <section className="accommodation">
                 <div className="title">
-                    <FontAwesomeIcon size="md" icon={faHome} />
-                    Accommodation
+                    .Accommodation
                 </div>
                 <div className="details">
                     <p> 2 October Incheckning när som helst efter 15:00 </p>
