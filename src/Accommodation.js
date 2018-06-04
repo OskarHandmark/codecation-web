@@ -1,16 +1,20 @@
 import React, { Component } from 'react';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import faHome from '@fortawesome/fontawesome-free-solid/faHome';
+<<<<<<< HEAD:src/Airbnb.js
 import YouTube from 'react-youtube';
 import images from './img/airbnb';
+=======
+import images from './img/accommodation';
+>>>>>>> Scrollable anchors added + airbnb refactored to accomodation:src/Accommodation.js
 
-class Airbnb extends Component {
+class Accommodation extends Component {
     render() {
         return (
-            <section className="airbnb">
+            <section className="accommodation">
                 <div className="title">
                     <FontAwesomeIcon size="md" icon={faHome} />
-                    Airbnb
+                    Accommodation
                 </div>
                 <div className="details">
                     <p> 2 October Incheckning när som helst efter 15:00 </p>
@@ -24,7 +28,7 @@ class Airbnb extends Component {
                     <YouTube videoId="fymERNWV5UA" />
                     <YouTube videoId="ebYpLEuoSzo" />
                 </div>
-                <div className="airbnb-img-grid">
+                <div className="accommodation-img-grid">
                     {
                         images.map(img => <img src={img} />)
                     }
@@ -34,4 +38,4 @@ class Airbnb extends Component {
     }
 }
 
-export default Airbnb;
+export default Accommodation;
