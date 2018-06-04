@@ -14,7 +14,7 @@ class App extends Component {
         return (
             <React.Fragment>
                 <Navigation />
-                <div className="main">
+                <main>
                     <Countdown date="2018-10-02T08:55:00" />
                     <ScrollableAnchor id={'accommodation'}>
                         <Accommodation />
@@ -28,7 +28,7 @@ class App extends Component {
                     <ScrollableAnchor id={'food'}>
                         <Food />
                     </ScrollableAnchor>
-                </div>
+                </main>
                 <Footer />
             </React.Fragment>
         );

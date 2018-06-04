@@ -40,10 +40,10 @@ footer {
     margin: auto;
 }
 
-.main {
+main {
     display: grid;
     grid-row-gap: 2em;
-    margin: 2em auto;
+    margin: 2em 0;
 }
 
 section > .title {
