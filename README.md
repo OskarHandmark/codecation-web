@@ -37,3 +37,9 @@ Day 7 (Afternoon, 8 october): Finishing presentation
 ## Food
 
 TBA
+
+## vids
+
+https://www.youtube.com/watch?v=PW0iOW61IZQ
+https://www.youtube.com/watch?v=fymERNWV5UA
+https://www.youtube.com/watch?v=ebYpLEuoSzo

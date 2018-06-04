@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import FontAwesomeIcon from '@fortawesome/react-fontawesome'
-import faHome from '@fortawesome/fontawesome-free-solid/faHome'
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import faHome from '@fortawesome/fontawesome-free-solid/faHome';
+import images from './img/airbnb';
 
 class Airbnb extends Component {
     render() {
@@ -19,6 +20,11 @@ class Airbnb extends Component {
                     <a href="https://www.youtube.com/watch?v=PW0iOW61IZQ">Video 1</a><br></br>
                     <a href="https://www.youtube.com/watch?v=fymERNWV5UA">Video 2</a><br></br>
                     <a href="https://www.youtube.com/watch?v=ebYpLEuoSzo">Video 3</a>
+                </div>
+                <div className="airbnb-img-grid">
+                    {
+                        images.map(img => <img src={img} />)
+                    }
                 </div>
             </section>
         );
