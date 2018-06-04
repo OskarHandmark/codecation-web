@@ -16,13 +16,14 @@ import faPaperPlane from '@fortawesome/fontawesome-free-solid/faPaperPlane'
     Hand Luggage x 1, Max 10 kg, Max 55 x 40 x 23 cm
 */
 
+/**/
+
 class Flights extends Component {
     render() {
         return (
             <section className="flights">
                 <div className="title">
-                    <FontAwesomeIcon size="md" icon={faPaperPlane} />
-                    Flights
+                    .Flights
                 </div>
                 <div className="details">
                     <p> Flygresa D83656 - 2018 okt 02 </p>
