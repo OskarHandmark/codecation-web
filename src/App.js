@@ -13,13 +13,13 @@ class App extends Component {
         return (
             <React.Fragment>
                 <Navigation />
-                <div className="main">
+                <main>
                     <Countdown date="2018-10-02T08:55:00" />
                     <Airbnb />
                     <Flights />
                     <Agenda />
                     <Food />
-                </div>
+                </main>
                 <Footer />
             </React.Fragment>
         );
