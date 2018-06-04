@@ -55,3 +55,17 @@ section > .title {
 section > .details {
     color: darkblue;
 }
+
+.airbnb-img-grid {
+    display: grid;
+    grid-row-gap: 1px;
+    grid-column-gap: 1px;
+    margin: 2em auto;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.airbnb-img-grid img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
