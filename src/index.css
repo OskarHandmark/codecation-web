@@ -69,3 +69,8 @@ section > .details {
     max-width: 100%;
     height: auto;
 }
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
