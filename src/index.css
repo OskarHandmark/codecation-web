@@ -38,8 +38,14 @@ footer {
     margin: auto;
 }
 
+.title {
+    display: flex;
+    align-items: center;
+}
+
 .section-title {
     font-size: 2em;
+    margin-left: 10px;
 }
 
 .flights-grid {

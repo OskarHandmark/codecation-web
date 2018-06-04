@@ -3,8 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-free-solid": "^5.0.13",
+    "@fortawesome/react-fontawesome": "0.0.20",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
+    "react-icons": "^2.2.7",
     "react-scripts": "1.1.4",
     "serve": "^6.5.8"
   },
