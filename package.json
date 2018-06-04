@@ -10,6 +10,7 @@
     "react-dom": "^16.4.0",
     "react-icons": "^2.2.7",
     "react-scripts": "1.1.4",
+    "react-youtube": "^7.6.0",
     "serve": "^6.5.8"
   },
   "scripts": {

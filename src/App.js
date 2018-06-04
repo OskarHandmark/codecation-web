@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Navigation from './Navigation';
+import Countdown from './Countdown';
 import Flights from './Flights';
 import Airbnb from './Airbnb';
 import Footer from './Footer';
@@ -13,6 +14,7 @@ class App extends Component {
             <React.Fragment>
                 <Navigation />
                 <main>
+                    <Countdown date="2018-10-02T08:55:00" />
                     <Airbnb />
                     <Flights />
                     <Agenda />
