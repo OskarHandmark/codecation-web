@@ -1,3 +1,5 @@
+/* MAIN */ 
+
 body {
   margin: 0;
   padding: 0;
@@ -23,7 +25,7 @@ nav a {
 footer {
     height: 75px;
     background: whitesmoke;
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
     left: 0;
@@ -38,21 +40,18 @@ footer {
     margin: auto;
 }
 
-.title {
-    display: flex;
-    align-items: center;
+.main {
+    display: grid;
+    grid-row-gap: 2em;
+    margin: 2em auto;
 }
 
-.section-title {
+section > .title {
     font-size: 2em;
-    margin-left: 10px;
+    font-weight: bold;
+    margin-bottom: 1em;
 }
 
-.flights-grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-}
-.airbnb-grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+section > .details {
+    color: darkblue;
 }
