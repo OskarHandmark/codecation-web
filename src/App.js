@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 
-import Navigation from './Navigation.js';
+import Navigation from './Navigation';
 import Flights from './Flights';
-import Footer from './Footer.js';
+import Airbnb from './Airbnb';
+import Footer from './Footer';
 
 class App extends Component {
     render() {
@@ -10,6 +11,7 @@ class App extends Component {
             <React.Fragment>
                 <Navigation />
                 <div style={{ height: 700 }}>
+                    <Airbnb />
                     <Flights />
                 </div>
                 <Footer />
