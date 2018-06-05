@@ -15,7 +15,6 @@ body {
   color: #16181c;
 }
 
-
 nav {
     height: 75px;
     background-color: white;
@@ -101,4 +100,22 @@ section > .title {
 
 .videos iframe {
     max-width: 100%;
+}
+
+.countdown-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.countdown-days {
+    font-size: 72px;
+    display: flex;
+    margin: auto;
+}
+
+.countdown-clock {
+    font-size: 48px;
+    display: flex;
+    margin: auto;
 }
