@@ -65,7 +65,7 @@ footer {
 main {
     display: grid;
     grid-row-gap: 2em;
-    padding: 2em 10em;
+    margin: 2em 10em;
 }
 
 section > .title {
@@ -75,20 +75,6 @@ section > .title {
     font-family: 'Space Mono', monospace;
     text-transform: lowercase;
     color: #3f2caa;
-}
-
-.accommodation-img-grid {
-    display: grid;
-    grid-row-gap: 2em;
-    grid-column-gap: 2em;
-    margin: 2em auto;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.accommodation-img-grid img {
-    display: block;
-    max-width: 100%;
-    height: auto;
 }
 
 .videos {
