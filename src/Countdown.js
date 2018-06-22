@@ -77,35 +77,27 @@ class Countdown extends React.Component {
         const countDown = this.state;
 
         return (
-            <div>
-                <span>
+            <div className="countdown-container">
+                <div className="countdown-days">
                     <span>
                         <strong>{this.addLeadingZeros(countDown.days)}</strong>
-                        <span>{countDown.days === 1 ? 'Day' : 'Days'}</span>
+                        <span>{countDown.days === 1 ? 'Day' : ' Days'}</span>
                     </span>
-                </span>
+                </div>
 
-                <span >
+                <div className="countdown-clock">
                     <span>
                         <strong>{this.addLeadingZeros(countDown.hours)}</strong>
-                        <span>Hours</span>
+                        <span>:</span>
                     </span>
-                </span>
-
-
-                <span >
                     <span >
                         <strong>{this.addLeadingZeros(countDown.min)}</strong>
-                        <span>Min</span>
+                        <span>:</span>
                     </span>
-                </span>
-
-                <span >
                     <span >
                         <strong>{this.addLeadingZeros(countDown.sec)}</strong>
-                        <span>Sec</span>
                     </span>
-                </span>
+                </div>
             </div>
         );
     }
