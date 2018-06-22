@@ -7,6 +7,7 @@ class Accommodation extends Component {
     render() {
         return (
             <section className="accommodation">
+                <div className="title">.Accommodation</div>
                 <div style={{ width: '75%', margin: 'auto' }}>
                     <Carousel
                         infiniteLoop
