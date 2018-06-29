@@ -6,6 +6,7 @@ import Flights from './Flights';
 import Accommodation from './Accommodation';
 import Footer from './Footer';
 import Agenda from './Agenda';
+import Codecationists from './Codecationists';
 import Food from './Food';
 import ScrollableAnchor from 'react-scrollable-anchor'; // configurable - https://github.com/gabergg/react-scrollable-anchor
 
@@ -24,6 +25,9 @@ class App extends Component {
                     </ScrollableAnchor>
                     <ScrollableAnchor id={'agenda'}>
                         <Agenda />
+                    </ScrollableAnchor>
+                    <ScrollableAnchor id={'codecationists'}>
+                        <Codecationists />
                     </ScrollableAnchor>
                     <ScrollableAnchor id={'food'}>
                         <Food />
