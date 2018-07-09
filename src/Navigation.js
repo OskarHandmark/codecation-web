@@ -6,6 +6,7 @@ const Navigation = () =>
             <a href='#accommodation'>.accommodation</a>
             <a href='#flights'>.flights</a>
             <a href='#agenda'>.agenda</a>
+            <a href='#codecationists'>.codecationists</a>
             <a href='#food'>.food</a>
         </div>
     </nav>;

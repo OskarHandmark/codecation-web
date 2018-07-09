@@ -117,5 +117,22 @@ section > .title {
     margin-bottom: 5px;
 }
 
-.day-item-container .day-desc {
+.profile {
+    display: flex;
+    margin: 10px;
+}
+
+.profile .profile-img {
+    width: 80px;
+    height: 80px;
+    background-color: #cccccc;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.profile .info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
 }
