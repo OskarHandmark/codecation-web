@@ -11,13 +11,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
-  background-color: white;
-  color: #16181c;
+  background-color: rgb(26, 29, 27);
+  color: white;
 }
 
 nav {
     height: 75px;
-    background-color: white;
+    background-color: rgb(26, 29, 27);
 }
 
 .nav-container {
@@ -30,7 +30,7 @@ nav a, a:focus, a:visited {
     line-height: 45px;
     margin: 15px 0;
     padding: 0 15px;
-    color: #16181c;
+    color: white;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 300;
@@ -73,7 +73,7 @@ section > .title {
     margin-bottom: 1em;
     font-family: 'Space Mono', monospace;
     text-transform: lowercase;
-    color: #3f2caa;
+    color: white;
 }
 
 .videos {
@@ -92,6 +92,7 @@ section > .title {
     display: flex;
     flex-direction: column;
     margin: auto;
+    color: white;
 }
 
 .countdown-days {
@@ -135,4 +136,47 @@ section > .title {
     flex-direction: column;
     justify-content: center;
     margin: 10px;
+}
+
+.flight-info {
+    display: flex;
+}
+
+.flights > .details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly
+}
+
+.flight-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flight-details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+}
+
+.flight-type {
+    font-size: 24px;
+}
+
+.flight-details div {
+    margin: 5px;
+}
+
+.flight-connection {
+    display: flex;
+}
+
+.flight-details .time {
+    font-size: 42px;
+}
+
+.flight-date {
+    margin: 20px 0;
 }
