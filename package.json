@@ -13,7 +13,8 @@
     "react-scripts": "1.1.4",
     "react-scrollable-anchor": "^0.6.1",
     "react-youtube": "^7.6.0",
-    "serve": "^6.5.8"
+    "serve": "^6.5.8",
+    "typeface-montserrat": "0.0.54"
   },
   "scripts": {
     "start": "react-scripts start",

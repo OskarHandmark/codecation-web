@@ -67,6 +67,26 @@ main {
     margin: 2em 10em;
 }
 
+.splash {
+    display: flex;
+}
+
+.splash-info {
+    font-family: Montserrat;
+    display: flex;
+    margin: auto;
+}
+
+.splash-info > div {
+    margin: 10px;
+    padding: 5px;
+}
+
+.splash-info > div > span {
+    margin: 8px 5px 5px 7px;
+}
+
+
 section > .title {
     font-size: 2em;
     font-weight: bold;
@@ -179,4 +199,8 @@ section > .title {
 
 .flight-date {
     margin: 20px 0;
+}
+
+.flex {
+    display: flex;
 }

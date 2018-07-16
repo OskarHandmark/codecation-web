@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Navigation from './Navigation';
+import Splash from './Splash';
 import Countdown from './Countdown';
 import Flights from './Flights';
 import Accommodation from './Accommodation';
@@ -16,6 +17,7 @@ class App extends Component {
             <React.Fragment>
                 <Navigation />
                 <main>
+                    <Splash />
                     <Countdown date="2018-10-02T08:55:00" />
                     <ScrollableAnchor id={'accommodation'}>
                         <Accommodation />
