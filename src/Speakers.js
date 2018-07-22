@@ -9,11 +9,11 @@ const Profile = ({name, desc}) =>
         </div>
     </div>
 
-class Codecationists extends Component {
+class Speakers extends Component {
     render() {
         return (
-            <section className="codecationists">
-                <div className="title">.Codecationists</div>
+            <section className="Speakers">
+                <div className="title">.Speakers</div>
                 <div>
                     <Profile name="Jonas Af Munck Rosenschöld" desc="X, Y Z" />
                     <Profile name="Emil Boman" desc="X, Y Z" />
@@ -33,4 +33,4 @@ class Codecationists extends Component {
     }
 }
 
-export default Codecationists;
+export default Speakers;

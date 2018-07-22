@@ -8,13 +8,14 @@
     "@fortawesome/react-fontawesome": "0.0.20",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
-    "react-icons": "^2.2.7",
     "react-icons-kit": "^1.1.5",
+    "react-responsive": "^5.0.0",
     "react-responsive-carousel": "^3.1.39",
     "react-scripts": "1.1.4",
     "react-scrollable-anchor": "^0.6.1",
     "react-youtube": "^7.6.0",
-    "serve": "^6.5.8"
+    "serve": "^6.5.8",
+    "typeface-montserrat": "0.0.54"
   },
   "scripts": {
     "start": "react-scripts start",

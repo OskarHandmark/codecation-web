@@ -5,7 +5,9 @@ import registerServiceWorker from './registerServiceWorker';
 import App from './App';
 import './index.css';
 
-import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
+import 'typeface-montserrat';
+
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 ReactDOM.render(<App />, document.getElementById('root'));
-// registerServiceWorker();
+registerServiceWorker();

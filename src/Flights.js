@@ -4,8 +4,6 @@ import { takeOff } from 'react-icons-kit/entypo/takeOff';
 import { landing } from 'react-icons-kit/entypo/landing';
 import { threeHorizontal } from 'react-icons-kit/entypo/threeHorizontal';
 
-import { thinRight } from 'react-icons-kit/entypo/thinRight';
-
 /*
     Flygresa D83656 - 2018 okt 02
 
