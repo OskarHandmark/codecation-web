@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
-import YouTube from 'react-youtube';
 import { Carousel } from 'react-responsive-carousel';
 import images from './img/accommodation';
 
 class Accommodation extends Component {
     render() {
         return (
-            <section className="accommodation">
+            <section className="accommodation" style={{position: 'relative'}}>
                 <div className="title">.Accommodation</div>
-                <div style={{ width: '75%', margin: 'auto' }}>
+                <div>
                     <Carousel infiniteLoop
                     >
-                        {images.map(img => <div> <img src={img} /> </div>)}
+                        {images.map(img => <div> <img src={img} alt=""/> </div>)}
                     </Carousel>
                 </div >
             </section >

@@ -16,19 +16,23 @@ body {
 }
 
 nav {
-    height: 75px;
+    height: 54px;
     background-color: rgb(26, 29, 27);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 .nav-container {
     display: flex;
-    padding: 0 10em;
     justify-content: flex-end;
+    width: 75%;
+    margin: auto;
 }
 
 nav a, a:focus, a:visited {
-    line-height: 45px;
-    margin: 15px 0;
+    line-height: 38px;
+    margin: 8px 0;
     padding: 0 15px;
     color: white;
     text-decoration: none;
@@ -62,19 +66,25 @@ footer {
 }
 
 main {
-    display: grid;
-    grid-row-gap: 2em;
-    margin: 2em 10em;
+    display: flex;
+    flex-direction: column;
 }
 
 .splash {
     display: flex;
+    flex-direction: column;
+    background-color: #0d2241;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0 0;
+    height: 100vh;
 }
 
 .splash-info {
-    font-family: Montserrat;
     display: flex;
     margin: auto;
+    margin-top: 300px;
 }
 
 .splash-info > div {
@@ -82,10 +92,17 @@ main {
     padding: 5px;
 }
 
-.splash-info > div > span {
+.splash-info > div > h3 {
     margin: 8px 5px 5px 7px;
+    font-family: Montserrat, sans-serif;
+    letter-spacing: 2px;
+    font-weight: 400;
 }
 
+section {
+    width: 75%;
+    margin: 3em auto;
+}
 
 section > .title {
     font-size: 2em;
@@ -113,6 +130,7 @@ section > .title {
     flex-direction: column;
     margin: auto;
     color: white;
+    height: 20vh;
 }
 
 .countdown-days {
@@ -172,6 +190,7 @@ section > .title {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: auto;
 }
 
 .flight-details {

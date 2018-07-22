@@ -1,24 +1,25 @@
 import React, { Component } from 'react';
+import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
 
 import Navigation from './Navigation';
 import Splash from './Splash';
-import Countdown from './Countdown';
 import Flights from './Flights';
 import Accommodation from './Accommodation';
 import Footer from './Footer';
 import Agenda from './Agenda';
-import Codecationists from './Codecationists';
+import Speakers from './Speakers';
 import Food from './Food';
-import ScrollableAnchor from 'react-scrollable-anchor'; // configurable - https://github.com/gabergg/react-scrollable-anchor
+
+configureAnchors({ offset: -60 });
 
 class App extends Component {
     render() {
+
         return (
             <React.Fragment>
                 <Navigation />
                 <main>
                     <Splash />
-                    <Countdown date="2018-10-02T08:55:00" />
                     <ScrollableAnchor id={'accommodation'}>
                         <Accommodation />
                     </ScrollableAnchor>
@@ -28,8 +29,8 @@ class App extends Component {
                     <ScrollableAnchor id={'agenda'}>
                         <Agenda />
                     </ScrollableAnchor>
-                    <ScrollableAnchor id={'codecationists'}>
-                        <Codecationists />
+                    <ScrollableAnchor id={'Speakers'}>
+                        <Speakers />
                     </ScrollableAnchor>
                     <ScrollableAnchor id={'food'}>
                         <Food />

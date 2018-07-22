@@ -1,26 +1,24 @@
 import React from "react";
+import Countdown from './Countdown';
 import { location } from 'react-icons-kit/icomoon/location';
 import { calendar } from 'react-icons-kit/fa/calendar';
 import Icon from 'react-icons-kit';
+import barcelona from './img/barcelona.jpg';
 
 class Splash extends React.Component {
     render() {
-        const countDown = this.state;
-
-        return <div className="splash">
+        return <div className="splash" style={{ backgroundImage: `url(${barcelona})` }}>
             <div className="splash-info">
                 <div className="flex">
                     <Icon size={18} icon={calendar} />
-                    <span> 13-15 SEPTEMBER 2018. </span>
+                    <h3> 2-9 OCTOBER 2018 </h3>
                 </div>
                 <div className="flex">
                     <Icon size={18} icon={location} />
-                    <span> BARCELONA, SPAIN </span>
+                    <h3> BARCELONA, SPAIN </h3>
                 </div>
             </div>
-            <div classNAme="splash-title">
-
-            </div>
+            <Countdown date="2018-10-02T08:55:00" />
         </div>
     }
 }
