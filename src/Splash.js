@@ -9,16 +9,16 @@ class Splash extends React.Component {
     render() {
         return <div className="splash" style={{ backgroundImage: `url(${barcelona})` }}>
             <div className="splash-title">
-                <h1> CODECATION 18</h1>
+                <h1> CODECATION </h1>
             </div>
             <div className="splash-info">
                 <div className="flex">
                     <Icon size={18} icon={calendar} />
-                    <h3> 2-9 OCTOBER 2018 </h3>
+                    <h4> 2-9 OCTOBER 2018 </h4>
                 </div>
                 <div className="flex">
                     <Icon size={18} icon={location} />
-                    <h3> BARCELONA, SPAIN </h3>
+                    <h4> BARCELONA, SPAIN </h4>
                 </div>
             </div>
             <Countdown date="2018-10-02T08:55:00" />

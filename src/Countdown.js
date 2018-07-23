@@ -13,11 +13,17 @@ class Countdown extends React.Component {
     }
 
     componentDidMount() {
+        this.updateDate();
+
         // update every second
         this.interval = setInterval(() => {
-            const date = this.calculateCountdown(this.props.date);
-            date ? this.setState(date) : this.stop();
+            this.updateDate();
         }, 1000);
+    }
+
+    updateDate() {
+        const date = this.calculateCountdown(this.props.date);
+        date ? this.setState(date) : this.stop();
     }
 
     componentWillUnmount() {
@@ -75,7 +81,7 @@ class Countdown extends React.Component {
 
     render() {
         const countDown = this.state;
-
+        console.log(countDown);
         return (
             <div className="countdown-container">
                 <div className="countdown-days">

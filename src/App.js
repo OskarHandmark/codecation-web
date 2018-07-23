@@ -4,11 +4,11 @@ import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
 import Navigation from './Navigation';
 import Splash from './Splash';
 import Flights from './Flights';
-import Accommodation from './Accommodation';
+import Intro from './Intro';
+import Venue from './Venue';
 import Footer from './Footer';
 import Agenda from './Agenda';
 import Speakers from './Speakers';
-import Food from './Food';
 
 configureAnchors({ offset: -60 });
 
@@ -20,8 +20,9 @@ class App extends Component {
                 <Navigation />
                 <main>
                     <Splash />
-                    <ScrollableAnchor id={'accommodation'}>
-                        <Accommodation />
+                    <Intro />
+                    <ScrollableAnchor id={'venue'}>
+                        <Venue />
                     </ScrollableAnchor>
                     <ScrollableAnchor id={'flights'}>
                         <Flights />
@@ -31,9 +32,6 @@ class App extends Component {
                     </ScrollableAnchor>
                     <ScrollableAnchor id={'Speakers'}>
                         <Speakers />
-                    </ScrollableAnchor>
-                    <ScrollableAnchor id={'food'}>
-                        <Food />
                     </ScrollableAnchor>
                 </main>
                 <Footer />

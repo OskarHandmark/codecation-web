@@ -14,7 +14,34 @@ body {
   background-color: rgb(26, 29, 27);
   color: white;
   max-width: 100%;
+  font-size: 14px;
   overflow-x: hidden;
+}
+
+h1, h2,h3,h4,h5,h6 {
+    font-family: Montserrat, sans-serif;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 1em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h1 {
+    font-size: 3em
 }
 
 nav {
@@ -79,13 +106,13 @@ main {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position: 0 0;
+    background-position: 75% 75%;
     font-family: Montserrat, sans-serif;
     height: 100vh;
 }
 
 .splash-title {
-    margin: 150px auto 25px auto;
+    margin: 150px auto 0 auto;
 }
 
 .splash-title > h1 {
@@ -96,7 +123,7 @@ main {
 
 .splash-info {
     display: flex;
-    margin: 0 auto auto auto;
+    margin: 30px auto;
 }
 
 .splash-info > div {
@@ -104,10 +131,8 @@ main {
     padding: 5px;
 }
 
-.splash-info > div > h3 {
+.splash-info > div > h4 {
     margin: 8px 5px 5px 7px;
-    letter-spacing: 2px;
-    font-weight: 400;
 }
 
 section {
@@ -122,6 +147,45 @@ section > .title {
     font-family: 'Space Mono', monospace;
     text-transform: lowercase;
     color: white;
+}
+
+section.intro {
+    margin: 50px auto;
+    width: 100%;
+    text-align: center;
+}
+
+.intro-container {
+    margin: auto;
+    margin-top: 50px;
+    width: 40%;
+}
+
+.intro-paragraph {
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 44px;
+}
+
+.intro-quote {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 1.5em;
+    text-align: right;
+    font-style: italic;
+}
+
+.quote {
+    margin-bottom: 0px;
+}
+
+.quote-icon {
+    margin: 0 7px -7px 9px;
+}
+
+.author {
+    font-style: normal;
+    margin-right: 10px;
 }
 
 .videos {
@@ -139,7 +203,7 @@ section > .title {
 .countdown-container {
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: 0 auto auto auto;
     color: white;
     height: 20vh;
 }
@@ -147,13 +211,13 @@ section > .title {
 .countdown-days {
     font-size: 72px;
     display: flex;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .countdown-clock {
     font-size: 48px;
     display: flex;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .day-item-container {
@@ -233,4 +297,16 @@ section > .title {
 
 .flex {
     display: flex;
+}
+
+.image-grid {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.image-grid img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
