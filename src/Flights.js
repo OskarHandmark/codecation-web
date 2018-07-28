@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
+import { Grid, Row, Col } from 'react-flexbox-grid';
 import Icon from 'react-icons-kit';
 import { takeOff } from 'react-icons-kit/entypo/takeOff';
 import { landing } from 'react-icons-kit/entypo/landing';
 import { threeHorizontal } from 'react-icons-kit/entypo/threeHorizontal';
-
 /*
     Flygresa D83656 - 2018 okt 02
 
@@ -32,15 +32,18 @@ const FlightDetails = ({ icon, time, location }) => <div className="flight-detai
     <div> {location} </div>
 </div>
 
-const FlightInfo = ({ title, date, from, to }) => <div className="flight-info-container">
-    <div className="flight-type"> {title} </div>
-    <div className="flight-date"> {date} </div>
-    <div className="flight-info">
-        <FlightDetails icon={takeOff} {...from} />
-        <Connection />
-        <FlightDetails icon={landing} {...to} />
-    </div>
-</div>
+const FlightInfo = ({ title, date, from, to }) =>
+    <Col xs={12} sm={12} md={12} lg={6} xl={6}>
+        <div className="flight-info-container">
+            <div className="flight-type"> {title} </div>
+            <div className="flight-date"> {date} </div>
+            <div className="flight-info">
+                <FlightDetails icon={takeOff} {...from} />
+                <Connection />
+                <FlightDetails icon={landing} {...to} />
+            </div>
+        </div>
+    </Col>
 
 class Flights extends Component {
     render() {
@@ -50,30 +53,34 @@ class Flights extends Component {
                     .Flights
                 </div>
                 <div className="details">
-                    <FlightInfo
-                        title="Departure"
-                        date="2018-10-02"
-                        from={{
-                            location: "Copenhagen Airport (CPH)",
-                            time: "08:55"
-                        }}
-                        to={{
-                            location: "Barcelona Airport (BCN)",
-                            time: "11:45"
-                        }}
-                    />
-                    <FlightInfo
-                        title="Return"
-                        date="2018-10-09"
-                        from={{
-                            location: "Barcelona Airport (BCN)",
-                            time: "12:30"
-                        }}
-                        to={{
-                            location: "Copenhagen Airport (CPH)",
-                            time: "15:30"
-                        }}
-                    />
+                    <Grid fluid>
+                        <Row>
+                            <FlightInfo
+                                title="Departure"
+                                date="2018-10-02"
+                                from={{
+                                    location: "Copenhagen Airport (CPH)",
+                                    time: "08:55"
+                                }}
+                                to={{
+                                    location: "Barcelona Airport (BCN)",
+                                    time: "11:45"
+                                }}
+                            />
+                            <FlightInfo
+                                title="Return"
+                                date="2018-10-09"
+                                from={{
+                                    location: "Barcelona Airport (BCN)",
+                                    time: "12:30"
+                                }}
+                                to={{
+                                    location: "Copenhagen Airport (CPH)",
+                                    time: "15:30"
+                                }}
+                            />
+                        </Row>
+                    </Grid>
                 </div>
             </section>
         );
@@ -81,15 +88,3 @@ class Flights extends Component {
 }
 
 export default Flights;
-/*
-<p> Flygresa D83656 - 2018 okt 02 </p>
-                    <p>Departure   08:55 Köpenhamn (CPH) Terminal 2 </p>
-                    <p> Arrival     11:45 Barcelona (BCN) Terminal 2 </p>
-
-                    <p>Flygresa D83657 - 2018 okt 09 </p>
-
-                    <p>Departure  12:30 Barcelona (BCN) Terminal 2 </p>
-                    <p> Arrival    15:30 Köpenhamn (CPH) Terminal 3 </p>
-
-                    <p> Hand Luggage x 1, Max 10 kg, Max 55 x 40 x 23 cm </p>
-*/

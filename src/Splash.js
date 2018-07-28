@@ -1,8 +1,8 @@
 import React from "react";
-import Countdown from './Countdown';
 import { location } from 'react-icons-kit/icomoon/location';
 import { calendar } from 'react-icons-kit/fa/calendar';
 import Icon from 'react-icons-kit';
+import Countdown from './Countdown';
 import barcelona from './img/barcelona.jpg';
 
 class Splash extends React.Component {

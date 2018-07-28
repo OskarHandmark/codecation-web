@@ -1,34 +1,49 @@
 import React, { Component } from 'react';
+import { Grid, Row, Col } from 'react-flexbox-grid';
+import {
+    boman,
+    anders,
+    johan,
+    anton,
+    jakob,
+    jocke,
+    jonas,
+    jonasm,
+    michal,
+    hannes,
+    oskar
+} from './img/profiles';
 
-const Profile = ({name, desc}) => 
-    <div className="profile">
-        <div className="profile-img" /> 
-        <div className="info-container">
+const Profile = ({ name, img }) =>
+    <Col xs={12} sm={6} md={6} lg={4} xl={3}>
+        <div className="profile">
+            <img className="profile-img" src={img} alt="" />
             <div className="name"> {name} </div>
-            <div className="desc"> {desc} </div>
         </div>
-    </div>
+    </Col>
 
 class Speakers extends Component {
     render() {
         return (
             <section className="Speakers">
                 <div className="title">.Speakers</div>
-                <div>
-                    <Profile name="Jonas Af Munck Rosenschöld" desc="X, Y Z" />
-                    <Profile name="Emil Boman" desc="X, Y Z" />
-                    <Profile name="Anders Davoust" desc="X, Y Z" />
-                    <Profile name="Joachim Eriksson" desc="X, Y Z" />
-                    <Profile name="Jakob Folkesson" desc="X, Y Z" />
-                    <Profile name="Jonas Hallin" desc="X, Y Z" />
-                    <Profile name="Oskar Handmark" desc="X, Y Z" />
-                    <Profile name="Johan Henriksson" desc="X, Y Z" />
-                    <Profile name="Anton Jakobsson" desc="X, Y Z" />
-                    <Profile name="Henrik Johansson" desc="X, Y Z" />
-                    <Profile name="Hannes Sandberg" desc="X, Y Z" />
-                    <Profile name="Michal Stypa" desc="X, Y Z" />
-                </div>
-            </section>
+                <Grid fluid>
+                    <Row>
+                        <Profile name="Oskar Handmark" img={oskar} />
+                        <Profile name="Johan Henriksson" img={johan} />
+                        <Profile name="Jonas Hallin" img={jonas} />
+                        <Profile name="Anton Jakobsson" img={anton} />
+                        <Profile name="Michal Stypa" img={michal} />
+                        <Profile name="Joachim Eriksson" img={jocke} />
+                        <Profile name="Jakob Folkesson" img={jakob} />
+                        <Profile name="Hannes Sandberg" img={hannes} />
+                        <Profile name="Anders Davoust" img={anders} />
+                        <Profile name="Emil Boman" img={boman} />
+                        <Profile name="Jonas Af Munck Rosenschöld" img={jonasm} />
+                        <Profile name="Henrik Johansson" />
+                    </Row>
+                </Grid >
+            </section >
         );
     }
 }

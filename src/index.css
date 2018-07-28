@@ -55,7 +55,6 @@ nav {
 .nav-container {
     display: flex;
     justify-content: flex-end;
-    width: 75%;
     margin: auto;
 }
 
@@ -136,7 +135,6 @@ main {
 }
 
 section {
-    width: 75%;
     margin: 3em auto;
 }
 
@@ -158,7 +156,6 @@ section.intro {
 .intro-container {
     margin: auto;
     margin-top: 50px;
-    width: 40%;
 }
 
 .intro-paragraph {
@@ -233,22 +230,22 @@ section.intro {
 
 .profile {
     display: flex;
-    margin: 10px;
+    flex-direction: column;
+    margin: 1px;
+    align-items: center;
 }
 
 .profile .profile-img {
-    width: 80px;
-    height: 80px;
-    background-color: #cccccc;
-    border-radius: 50%;
-    margin: 10px;
+    display: block;
+    max-width: 250px;
+    max-height: 333px;
+    width: 100%;
+    height: auto;
 }
 
-.profile .info-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 10px;
+.profile .name {
+    text-align: left;
+    margin: 10px 0;
 }
 
 .flight-info {
@@ -266,13 +263,14 @@ section.intro {
     flex-direction: column;
     align-items: center;
     margin: auto;
+    margin-top: 20px;
 }
 
 .flight-details {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 200px;
+    min-width: 100px;
 }
 
 .flight-type {
@@ -299,13 +297,7 @@ section.intro {
     display: flex;
 }
 
-.image-grid {
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.image-grid img {
+.venue-img {
     display: block;
     max-width: 100%;
     height: auto;
