@@ -216,16 +216,60 @@ section.intro {
     display: flex;
     margin: 0 auto;
 }
+.agenda p {
+    font-size: 18px;
+}
+.agenda-container {
+    display: flex;
+    margin-top: 20px;
+}
 
 .day-item-container {
     display: flex;
-    flex-direction: column;
-    margin: 15px auto;
+    flex-direction: row;
+    padding: 10px 30px 30px 30px;
 }
 
-.day-item-container .day-title {
-    font-size: 24px;
+.day-item-content {
+    margin-left: 20px;
+}
+
+.vertical-line {
+    width: 3px;
+    height: auto;
+    background-color: white;
+}
+
+.day-header {
+    font-size: 20px;
+}
+
+.day-item {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 0 22px;
+
+}
+
+.day-title {
+    font-size: 18px;
     margin-bottom: 5px;
+}
+
+.day-desc {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    margin-bottom: 5px;
+    margin-left: 58px;
+}
+
+.day-desc span {
+    margin-bottom: 8px;
+}
+
+.day-author {
+    font-size: 12px;
 }
 
 .profile {
