@@ -123,11 +123,12 @@ main {
     letter-spacing: 3px;
 }
 
+
 .splash-info {
     display: flex;
     justify-content: center;
-    margin: 10px;
-    padding: 5px;
+    margin: 10px 0;
+    padding: 5px 0;
 }
 
 .splash-info > h4 {
@@ -200,7 +201,7 @@ section.intro {
 .countdown-container {
     display: flex;
     flex-direction: column;
-    margin: 0 auto auto auto;
+    margin: 15px auto auto auto;
     color: white;
     height: 20vh;
 }
@@ -248,7 +249,7 @@ section.intro {
     display: flex;
     flex-direction: column;
     margin: 10px 0 0 22px;
-
+    
 }
 
 .day-title {
@@ -330,7 +331,7 @@ section.intro {
 }
 
 .flight-details .time {
-    font-size: 42px;
+    font-size: 36px;
 }
 
 .flight-date {
@@ -345,4 +346,35 @@ section.intro {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+@media (max-width: 370px) {
+    .splash-title > h1 {
+        font-size: 36px;
+    }
+
+    .countdown-days {
+        font-size: 40px;
+    }
+
+    .countdown-clock {
+        font-size: 32px;
+    }
+
+    .flight-connection > div:nth-child(3) {
+        display: none !important;
+    }
+
+    nav a, a:focus, a:visited {
+        padding: 0 8px;
+    }
+
+    .intro-paragraph {
+        font-size: 16px;
+        padding: 0;
+    }
+
+    .author {
+        font-size: 16px;
+    }
 }

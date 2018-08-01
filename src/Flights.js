@@ -26,7 +26,7 @@ const Connection = () => <div className="flight-connection">
 
 const FlightDetails = ({ icon, time, location }) => <div className="flight-details">
     <div style={{ color: "#f99463" }}>
-        <Icon size={75} icon={icon} />
+        <Icon size={60} icon={icon} />
     </div>
     <div className="time"> {time}</div>
     <div> {location} </div>
