@@ -105,6 +105,9 @@ main {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;   
     background-position: 75% 75%;
     font-family: Montserrat, sans-serif;
     height: 100vh;

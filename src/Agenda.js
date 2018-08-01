@@ -37,7 +37,7 @@ const day3 = [
     { time: "17:30", title: "C++", author: "Emil Boman", desc: "How to write modern C++ without wanting to kill yourself" },
 ];
 const day4 = [
-    { time: "16:30", title: "Parkster", author: "Anders Davoust", desc: "Anders start-up journey with Parkster" },
+    { time: "16:30", title: "Monolith to microservices at Parkster", author: "Anders Davoust", desc: "Parkster's migration from Monolith to microservices" },
     { time: "17:00", title: "Bitcoin vs Blockchain, Part 1", author: "Johan Henriksson", desc: "" },
     { time: "17:30", title: "Bitcoin vs Blockchain, Part 2", author: "Johan Henriksson", desc: "" },
 ];
@@ -45,7 +45,7 @@ const day5 = [
     { time: "11:00", title: "Presentations, Group 1", author: '', desc: "Participants leaving early presents their accomplishments" },
     { time: "16:30", title: "Deep learning", author: "Anton Jakobsson", desc: "Theory, practice, research" },
     { time: "17:00", title: "Tensorflow", author: "Anton Jakobsson", desc: "A deep dive into Tensorflow" },
-    { time: "17:30", title: "Kitesurfing 101", author: "Joachim Eriksson", desc: "A theoretical introduction to Kitesurfing" },
+    { time: "20:00", title: "Kitesurfing 101", author: "Joachim Eriksson", desc: "A theoretical introduction to Kitesurfing" },
 ];
 const day6 = [
     { time: "16:30", title: "PostGraphile", author: "Oskar Handmark", desc: "Hands-on with PostGraphile, an instant & highly-performant GraphQL API for your PostgreSQL database." },
