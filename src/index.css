@@ -125,15 +125,12 @@ main {
 
 .splash-info {
     display: flex;
-    margin: 30px auto;
-}
-
-.splash-info > div {
+    justify-content: center;
     margin: 10px;
     padding: 5px;
 }
 
-.splash-info > div > h4 {
+.splash-info > h4 {
     margin: 8px 5px 5px 7px;
 }
 
@@ -163,7 +160,7 @@ section.intro {
 
 .intro-paragraph {
     font-weight: 300;
-    font-size: 21px;
+    font-size: 19px;
     line-height: 44px;
 }
 
