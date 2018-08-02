@@ -11,7 +11,8 @@ import {
     jonasm,
     michal,
     hannes,
-    oskar
+    oskar,
+    noProfile
 } from './img/profiles';
 
 const Profile = ({ name, img }) =>
@@ -40,7 +41,7 @@ class Speakers extends Component {
                         <Profile name="Anders Davoust" img={anders} />
                         <Profile name="Emil Boman" img={boman} />
                         <Profile name="Jonas Af Munck Rosenschöld" img={jonasm} />
-                        <Profile name="Henrik Johansson" />
+                        <Profile name="Henrik Johansson" img={noProfile} />
                     </Row>
                 </Grid >
             </section >

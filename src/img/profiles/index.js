@@ -9,6 +9,7 @@ import jonasm from './jonasm.jpeg';
 import michal from './michal.jpeg';
 import hannes from './hannes.jpeg';
 import oskar from './oskar.jpeg';
+import noProfile from './no-profile.jpeg';
 
 export {
     boman,
@@ -21,5 +22,6 @@ export {
     jonasm,
     michal,
     hannes,
-    oskar
+    oskar,
+    noProfile
 }

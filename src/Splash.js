@@ -3,12 +3,11 @@ import { location } from 'react-icons-kit/icomoon/location';
 import { calendar } from 'react-icons-kit/fa/calendar';
 import Icon from 'react-icons-kit';
 import Countdown from './Countdown';
-import barcelona from './img/barcelona.jpg';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
 class Splash extends React.Component {
     render() {
-        return <div className="splash" style={{ backgroundImage: `url(${barcelona})` }}>
+        return <div className="splash">
             <div className="splash-title">
                 <h1> CODECATION </h1>
             </div>

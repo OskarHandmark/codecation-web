@@ -101,16 +101,17 @@ main {
 .splash {
     display: flex;
     flex-direction: column;
+    background-image: url('./img/barcelona.jpg');
     background-color: #0d2241;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: 75% 75%;
+    font-family: Montserrat, sans-serif;
+    height: 100vh;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;   
-    background-position: 75% 75%;
-    font-family: Montserrat, sans-serif;
-    height: 100vh;
 }
 
 .splash-title {
