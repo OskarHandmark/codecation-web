@@ -104,14 +104,13 @@ main {
     background-image: url('./img/barcelona.jpg');
     background-color: #0d2241;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: 75% 75%;
     font-family: Montserrat, sans-serif;
     height: 100vh;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover;   
+    -o-background-size: cover;
 }
 
 .splash-title {
@@ -317,7 +316,7 @@ section.intro {
     display: flex;
     align-items: center;
     flex-direction: column;
-    min-width: 100px;
+    min-width: 30px;
 }
 
 .flight-type {
@@ -350,7 +349,7 @@ section.intro {
     height: auto;
 }
 
-@media (max-width: 370px) {
+@media (max-width: 380px) {
     .splash-title > h1 {
         font-size: 36px;
     }
