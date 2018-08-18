@@ -1,10 +1,18 @@
 import React, { Component } from 'react';
 import images from './img/venue';
 import { Grid, Row, Col } from 'react-flexbox-grid';
+import IdealImage from 'react-ideal-image';
 
 const Image = ({ src }) =>
-    <Col xs={12} sm={12} md={12} lg={6} xl={6} style={{ padding: 3}}>
-        <img className="venue-img" src={src} alt=""/>
+    <Col xs={12} sm={12} md={12} lg={6} xl={6} style={{ padding: 3 }}>
+        <IdealImage
+            className="venue-img"
+            placeholder={{ color: 'lightgrey' }}
+            srcSet={[{ src: src, width: 700 }]}
+            alt="img"
+            width={700}
+            height={470}
+        />
     </Col>
 
 class Venue extends Component {

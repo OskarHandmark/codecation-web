@@ -10,9 +10,11 @@
     "react-dom": "^16.4.0",
     "react-flexbox-grid": "^2.1.2",
     "react-icons-kit": "^1.1.5",
+    "react-ideal-image": "0.0.5",
     "react-responsive": "^5.0.0",
     "react-scripts": "1.1.4",
     "react-scrollable-anchor": "^0.6.1",
+    "react-waypoint": "^8.0.3",
     "serve": "^6.5.8"
   },
   "scripts": {

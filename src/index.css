@@ -74,25 +74,6 @@ nav a:hover {
     color: #ff5300;
 }
 
-footer {
-    height: 75px;
-    background-color:rgb(26, 29, 27)181c;
-    color: white;
-    position: relative;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-.footer-container {
-    display: flex;
-    height: 100%;
-}
-
-.footer-container div {
-    margin: auto;
-}
-
 main {
     display: flex;
     flex-direction: column;
@@ -102,7 +83,7 @@ main {
     display: flex;
     flex-direction: column;
     background-image: url('./img/barcelona.jpg');
-    background-color: #0d2241;
+    background-color: rgb(26, 29, 27);
     background-repeat: no-repeat;
     background-position: 75% 75%;
     font-family: Montserrat, sans-serif;
