@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-flexbox-grid';
+import IdealImage from 'react-ideal-image';
+
 import {
     boman,
     anders,
@@ -18,7 +20,14 @@ import {
 const Profile = ({ name, img }) =>
     <Col xs={12} sm={6} md={6} lg={4} xl={3}>
         <div className="profile">
-            <img className="profile-img" src={img} alt="" />
+            <IdealImage
+                className="profile-img"
+                placeholder={{ color: 'lightgrey' }}
+                srcSet={[{ src: img, width: 450 }]}
+                alt="img"
+                width={450}
+                height={600}
+            />
             <div className="name"> {name} </div>
         </div>
     </Col>
