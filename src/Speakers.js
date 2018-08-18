@@ -40,7 +40,7 @@ class Speakers extends Component {
                         <Profile name="Hannes Sandberg" img={hannes} />
                         <Profile name="Anders Davoust" img={anders} />
                         <Profile name="Emil Boman" img={boman} />
-                        <Profile name="Jonas Af Munck Rosenschöld" img={jonasm} />
+                        <Profile name="Jonas Munck Af Rosenschöld" img={jonasm} />
                         <Profile name="Henrik Johansson" img={noProfile} />
                     </Row>
                 </Grid >

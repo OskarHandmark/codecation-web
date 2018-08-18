@@ -70,13 +70,13 @@ class Agenda extends Component {
                     <div className="day-items">
                         <DayItem header="Day 1, Oct 2nd" events={day0} />
                         <DayItem header="Day 2, Oct 3rd" events={day1} />
-                        <DayItem header="Day 2, Oct 3rd" events={day2} />
-                        <DayItem header="Day 3, Oct 4th" events={day3} />
-                        <DayItem header="Day 4, Oct 5th" events={day4} />
-                        <DayItem header="Day 5, Oct 6th" events={day5} />
-                        <DayItem header="Day 6, Oct 7th" events={day6} />
-                        <DayItem header="Day 7, Oct 8th" events={day7} />
-                        <DayItem header="Day 8, Oct 9th" events={day8} />
+                        <DayItem header="Day 3, Oct 3rd" events={day2} />
+                        <DayItem header="Day 4, Oct 4th" events={day3} />
+                        <DayItem header="Day 5, Oct 5th" events={day4} />
+                        <DayItem header="Day 6, Oct 6th" events={day5} />
+                        <DayItem header="Day 7, Oct 7th" events={day6} />
+                        <DayItem header="Day 8, Oct 8th" events={day7} />
+                        <DayItem header="Day 9, Oct 9th" events={day8} />
                     </div>
                 </div>
             </section>
