@@ -7,10 +7,15 @@ const Navigation = () =>
             <Col xs={0} sm={0} md={1} lg={1} xl={2} />
             <Col xs={12} sm={12} md={10} lg={10} xl={8}>
                 <div className="nav-container">
-                    <a href='#venue'>.venue</a>
-                    <a href='#flights'>.flights</a>
-                    <a href='#agenda'>.agenda</a>
-                    <a href='#Speakers'>.Speakers</a>
+                    <div className="nav-content">
+                        <p>CODECATION</p>
+                    </div>
+                    <div className="nav-content">
+                        <a href='#flights'>.flights</a>
+                        <a href='#agenda'>.agenda</a>
+                        <a href='#speakers'>.speakers</a>
+                        <a href='#venue'>.venue</a>
+                    </div>
                 </div>
             </Col>
             <Col xs={0} sm={0} md={1} lg={1} xl={2} />

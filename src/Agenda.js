@@ -5,7 +5,7 @@ import { threeHorizontal } from 'react-icons-kit/entypo/threeHorizontal';
 
 const DayItem = ({ header, events }) =>
     <div className="day-item-container">
-        <Icon icon={threeHorizontal} size={24} style={{ alignItems: 'flex-start', color: '#f99463' }} />
+        <Icon icon={threeHorizontal} size={24} style={{ alignItems: 'flex-start' }} />
         <div className="day-item-content">
             <span className="day-header"> <Icon size={18} icon={calendar} /> {header} </span>
             {events.map(({ time, title, author, desc }) =>
@@ -13,7 +13,7 @@ const DayItem = ({ header, events }) =>
                     <div className="day-title"> {time && `${time} -`} {title}</div>
                     <div className="day-desc">
                         <span> {desc} </span>
-                        <span> {author} </span>
+                        <span className="day-author"> {author} </span>
                     </div>
                 </div>
             )}
@@ -67,14 +67,14 @@ class Agenda extends Component {
                 <div className="agenda-container">
                     <div className="vertical-line" />
                     <div className="day-items">
-                        <DayItem header="Day 1, Oct 2nd" events={day1} />
-                        <DayItem header="Day 2, Oct 3rd" events={day2} />
-                        <DayItem header="Day 3, Oct 4th" events={day3} />
-                        <DayItem header="Day 4, Oct 5th" events={day4} />
-                        <DayItem header="Day 5, Oct 6th" events={day5} />
-                        <DayItem header="Day 6, Oct 7th" events={day6} />
-                        <DayItem header="Day 7, Oct 8th" events={day7} />
-                        <DayItem header="Day 8, Oct 9th" events={day8} />
+                        <DayItem header="Day 1 - Oct 2nd" events={day1} />
+                        <DayItem header="Day 2 - Oct 3rd" events={day2} />
+                        <DayItem header="Day 3 - Oct 4th" events={day3} />
+                        <DayItem header="Day 4 - Oct 5th" events={day4} />
+                        <DayItem header="Day 5 - Oct 6th" events={day5} />
+                        <DayItem header="Day 6 - Oct 7th" events={day6} />
+                        <DayItem header="Day 7 - Oct 8th" events={day7} />
+                        <DayItem header="Day 8 - Oct 9th" events={day8} />
                     </div>
                 </div>
             </section>
