@@ -34,7 +34,7 @@ const FlightDetails = ({ icon, time, location }) => <div className="flight-detai
 
 const FlightInfo = ({ title, date, from, to }) =>
     <Col xs={12} sm={12} md={12} lg={6} xl={6}>
-        <div className="flight-info-container">
+        <div className="flight-info-container hovering">
             <div className="flight-info-header">
                 <div className="flight-type"> {title} </div>
                 <div className="flight-date"> {date} </div>

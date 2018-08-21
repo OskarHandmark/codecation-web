@@ -35,9 +35,9 @@ const Profile = ({ name, img }) =>
 class Speakers extends Component {
     render() {
         return (
-            <section className="Speakers">
+            <section className="speakers">
                 <div className="title">.Speakers</div>
-                <Grid fluid>
+                <Grid fluid className="section-container hovering">
                     <Row>
                         <Profile name="Oskar Handmark" img={oskar} />
                         <Profile name="Johan Henriksson" img={johan} />
