@@ -38,7 +38,10 @@ nav {
   width: 100%;
   z-index: 1000;
   background-color: #16181c;
-  color: white; }
+  color: white;
+  -webkit-box-shadow: 0px 0px 40px 1px rgba(12, 12, 12, 0.3);
+  -moz-box-shadow: 0px 0px 40px 1px rgba(12, 12, 12, 0.3);
+  box-shadow: 0px 0px 40px 1px rgba(12, 12, 12, 0.3); }
 
 nav .nav-container {
   display: flex;
@@ -103,13 +106,18 @@ main {
   font-family: Montserrat, sans-serif;
   margin-top: 45px;
   color: white;
-  background-image: url("./img/background-2-blurred.jpg");
+  background-image: url("./img/computer.jpg");
   background-repeat: no-repeat;
-  background-position: 75% 75%;
+  background-position: 25% 25%;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover; }
+
+.splash .splash-container {
+  background-color: rgba(22, 24, 29, 0.8);
+  padding: 50px 9vw;
+  border-radius: 4px; }
 
 .splash .splash-info-container .splash-info {
   display: flex;
@@ -341,6 +349,13 @@ section .title {
     font-size: 16px; } }
 
 @media (max-width: 768px) {
-  .splash-info {
+  .splash-grid {
+    background-color: rgba(22, 24, 29, 0.8) !important; }
+  .splash {
+    background-position: 65% 25%; }
+  .splash .splash-container {
+    padding: 0 !important;
+    background-color: transparent; }
+  .splash .splash-info {
     justify-content: flex-start !important;
     margin-bottom: 0 !important; } }

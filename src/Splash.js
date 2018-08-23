@@ -10,10 +10,10 @@ import { quotesRight } from 'react-icons-kit/icomoon/quotesRight';
 class Splash extends React.Component {
     render() {
         return <div className="splash">
-            <Grid fluid>
+            <Grid fluid className="splash-grid">
                 <Row>
-                    <Col xs={0} sm={0} md={1} lg={1} xl={2} />
-                    <Col xs={12} sm={12} md={10} lg={10} xl={8} style={{ margin: "auto" }}>
+                    <Col xs={0} sm={0} md={1} lg={1} xl={1} />
+                    <Col xs={12} sm={12} md={10} lg={10} xl={10} className="splash-container">
                         <Row className="splash-info-container">
                             <Col xs={12} sm={12} md={6} lg={6} xl={6} className="splash-info">
                                 <Icon size={16} icon={calendar} />
@@ -48,7 +48,7 @@ class Splash extends React.Component {
                             </div>
                         </div>
                     </Col>
-                    <Col xs={0} sm={0} md={1} lg={1} xl={2} />
+                    <Col xs={0} sm={0} md={1} lg={1} xl={1} />
                 </Row>
             </Grid>
         </div>
