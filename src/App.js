@@ -5,7 +5,6 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 import Navigation from './Navigation';
 import Splash from './Splash';
 import Flights from './Flights';
-import Intro from './Intro';
 import Venue from './Venue';
 import Agenda from './Agenda';
 import Speakers from './Speakers';
@@ -23,18 +22,17 @@ class App extends Component {
                         <Row>
                             <Col xs={0} sm={0} md={1} lg={1} xl={2} />
                             <Col xs={12} sm={12} md={10} lg={10} xl={8} style={{ "maxWidth": 2100, margin: "auto" }}>
-                                <Intro />
-                                <ScrollableAnchor id={'venue'}>
-                                    <Venue />
-                                </ScrollableAnchor>
                                 <ScrollableAnchor id={'flights'}>
                                     <Flights />
                                 </ScrollableAnchor>
                                 <ScrollableAnchor id={'agenda'}>
                                     <Agenda />
                                 </ScrollableAnchor>
-                                <ScrollableAnchor id={'Speakers'}>
+                                <ScrollableAnchor id={'speakers'}>
                                     <Speakers />
+                                </ScrollableAnchor>
+                                <ScrollableAnchor id={'venue'}>
+                                    <Venue />
                                 </ScrollableAnchor>
                             </Col>
                             <Col xs={0} sm={0} md={1} lg={1} xl={2} />

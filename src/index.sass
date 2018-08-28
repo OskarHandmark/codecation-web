@@ -1,0 +1,349 @@
+/* MAIN
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500|Lato:300,400|Space+Mono)
+
+// Colors
+$dark-gray: #16181c
+$red-orange: #ff5300
+$navy-blue: #0d2241
+$purple: #5856d6
+//$turqouise: #63f9af
+$turqouise: #00ffb1
+$gray: #777
+$middle-gray: #303136
+$sea-navy: #2c19a9
+$light-gray: #dadada
+
+body
+  margin: 0
+  padding: 0
+  font-family: 'Lato', sans-serif
+  background-color: $dark-gray
+  color: white
+  max-width: 100%
+  font-size: 14px
+  overflow-x: hidden
+
+img
+  border-radius: 4px;  
+
+h1, h2, h3, h4, h5, h6
+  font-family: Montserrat, sans-serif
+  letter-spacing: 2px
+  font-weight: 400
+
+h5
+  font-size: 1em
+
+h4
+  font-size: 1.5em
+
+h3
+  font-size: 2em
+
+h2
+  font-size: 2.5em
+
+h1
+  font-size: 3em
+
+nav
+  position: fixed
+  width: 100%
+  z-index: 1000
+  background-color: $dark-gray
+  color: white
+  -webkit-box-shadow: 0px 0px 40px 1px rgba(12, 12, 12, 0.3)
+  -moz-box-shadow: 0px 0px 40px 1px rgba(12, 12, 12, 0.3)
+  box-shadow: 0px 0px 40px 1px rgba(12, 12, 12, 0.3)
+  .nav-container
+    display: flex
+    justify-content: space-between
+    margin: auto
+    .nav-content
+      display: flex
+      align-items: center
+  a
+    padding: 0 15px
+    text-decoration: none
+    font-weight: 300
+    font-family: 'Space Mono', monospace
+    text-transform: lowercase
+    &:focus, &:visited
+      padding: 0 15px
+      text-decoration: none
+      font-weight: 300
+      font-family: 'Space Mono', monospace
+      text-transform: lowercase
+      color: white
+    &:hover
+      color: $turqouise
+  p
+    padding: 0 15px
+    color: white
+    text-decoration: none
+    font-weight: 700
+    text-transform: uppercase
+    float: left
+
+footer
+  height: 75px
+  background-color: rgb(26, 29, 27) 181c
+  color: white
+  position: relative
+  right: 0
+  bottom: 0
+  left: 0
+
+.footer-container
+  display: flex
+  height: 100%
+  div
+    margin: auto
+
+main
+  display: flex
+  flex-direction: column
+
+.splash
+  display: flex
+  align-items: center
+  min-height: 100vh
+  background-color: $dark-gray
+  font-family: Montserrat, sans-serif
+  margin-top: 45px
+  color: white
+  background-image: url('./img/catalonia-church.jpg')
+  background-repeat: no-repeat
+  background-position: 25% 25%
+  background-size: cover
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  .splash-container
+    background-color: rgba(22, 24, 29, 0.8)
+    padding: 50px 9vw
+    border-radius: 4px
+  .splash-info-container
+    .splash-info
+      display: flex
+      margin: 10px 0
+      h4
+        margin: 8px 5px 5px 10px
+    & div:last-child
+      justify-content: flex-end
+  .intro-container
+    font-family: 'Lato', sans-serif
+    .intro-paragraph
+      font-weight: 300
+      font-size: 19px
+      line-height: 44px
+    .intro-quote
+      display: flex
+      flex-direction: row-reverse
+      font-size: 1.5em
+      text-align: right
+      font-style: italic
+      padding-bottom: 30px
+      .quote
+        margin-bottom: 0px
+      .quote-icon
+        margin: 0 7px -7px 9px
+      .author
+        font-style: normal
+        margin-right: 10px
+        font-family: Montserrat, sans-serif
+  svg
+    color: $turqouise
+
+section
+  margin: 3em auto
+  .title
+    font-size: 2em
+    font-weight: bold
+    margin-bottom: 1em
+    font-family: 'Space Mono', monospace
+    text-transform: lowercase
+    color: $turqouise
+
+.section-container
+  padding-top: 16px
+
+.hovering
+  -webkit-box-shadow: 0px 0px 40px 1px #0c0c0c
+  -moz-box-shadow: 0px 0px 40px 1px #0c0c0c
+  box-shadow: 0px 0px 40px 1px #0c0c0c
+  border-radius: 4px
+
+.videos
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-row-gap: 2em
+  grid-column-gap: 2em
+  margin: 2em auto
+  iframe
+    max-width: 100%
+
+.countdown-container
+  display: flex
+  flex-direction: column
+  margin: 15px auto auto auto
+  color: white
+  height: 20vh
+
+.countdown-cell
+  padding: 20px 0 30px 0
+  .value
+    font-size: 80px
+    text-align: center
+  .unit
+    font-size: 24px
+    text-align: center
+
+.agenda-container
+  padding: 30px 10px 0 10px
+
+.agenda p
+  font-size: 18px
+
+.day-item-container
+  display: flex
+  flex-direction: row
+  padding: 10px 30px 30px 30px
+  svg
+    color: $turqouise
+
+.day-item-content
+  margin-left: 20px
+
+.day-header
+  font-size: 20px
+  font-weight: 600
+  div
+    margin-right: 10px
+  svg
+    color: $gray
+
+.day-item
+  display: flex
+  flex-direction: column
+  margin: 10px 0 0 32px
+
+.day-title
+  font-size: 18px
+  margin-bottom: 8px
+
+.day-desc
+  display: flex
+  flex-direction: column
+  font-size: 13px
+  margin-bottom: 5px
+  margin-left: 58px
+  span
+    margin-bottom: 8px
+
+.day-author
+  font-size: 12px
+  color: $gray
+
+.profile
+  display: flex
+  flex-direction: column
+  margin: 1px
+  align-items: center
+  .profile-img
+    display: block
+    max-width: 450px
+    max-height: 600px
+    width: 100%
+    height: auto
+  .name
+    text-align: left
+    margin: 10px 0
+
+.flight-info
+  display: flex
+
+.flight-info-header
+  display: flex
+  justify-content: space-between
+  width: 100%
+  align-items: center
+
+.flight-info-container
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 20px
+  border-radius: 4px
+  color: white
+  margin-top: 10px
+
+.flight-details
+  display: flex
+  align-items: center
+  flex-direction: column
+  min-width: 30px
+
+.flight-type
+  font-size: 1.5em
+  margin-left: 15px
+
+.flight-details
+  div
+    margin: 5px
+  .time
+    font-size: 36px
+    margin-top: 0
+  .city
+    color: $gray
+    margin-top: 10px
+
+.flight-connection
+  display: flex
+  margin: 0px 10px
+  color: $light-gray
+
+.flight-date
+  color: $gray
+  font-size: 1em
+  margin-right: 15px
+
+.flight-icon
+  margin-bottom: 0 !important
+  color: black
+
+.flex
+  display: flex
+
+.venue-img
+  display: block
+  width: 100%
+  height: auto
+
+@media (max-width: 380px)
+  .flight-connection
+    div:nth-child(3)
+      display: none !important
+  nav a
+    padding: 0 8px
+  a
+    &:focus, &:visited
+      padding: 0 8px
+  .intro-paragraph
+    font-size: 16px
+    padding: 0
+  .author
+    font-size: 16px
+
+@media (max-width: 768px)
+  .splash-grid
+    background-color: rgba(22, 24, 29, 0.8) !important
+  .splash
+    background-position: 65% 25%
+    .splash-container
+      padding: 0 !important
+      background-color: transparent;
+    .splash-info
+      justify-content: flex-start !important
+      margin-bottom: 0 !important

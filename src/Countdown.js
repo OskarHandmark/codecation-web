@@ -1,4 +1,5 @@
 import React from "react";
+import { Row, Col } from 'react-flexbox-grid';
 
 class Countdown extends React.Component {
     constructor(props) {
@@ -81,30 +82,25 @@ class Countdown extends React.Component {
 
     render() {
         const countDown = this.state;
-        console.log(countDown);
         return (
-            <div className="countdown-container">
-                <div className="countdown-days">
-                    <span>
-                        <strong>{this.addLeadingZeros(countDown.days)}</strong>
-                        <span>{countDown.days === 1 ? 'Day' : ' Days'}</span>
-                    </span>
-                </div>
-
-                <div className="countdown-clock">
-                    <span>
-                        <strong>{this.addLeadingZeros(countDown.hours)}</strong>
-                        <span>:</span>
-                    </span>
-                    <span >
-                        <strong>{this.addLeadingZeros(countDown.min)}</strong>
-                        <span>:</span>
-                    </span>
-                    <span >
-                        <strong>{this.addLeadingZeros(countDown.sec)}</strong>
-                    </span>
-                </div>
-            </div>
+            <Row>
+                <Col xs={6} sm={6} md={3} lg={3} xl={3} className="countdown-cell">
+                    <div className="value">{this.addLeadingZeros(countDown.days)}</div>
+                    <div className="unit">{countDown.days === 1 ? 'day' : ' days'}</div>
+                </Col>
+                <Col xs={6} sm={6} md={3} lg={3} xl={3} className="countdown-cell">
+                    <div className="value">{this.addLeadingZeros(countDown.hours)}</div>
+                    <div className="unit">{countDown.hours === 1 ? 'hour' : ' hours'}</div>
+                </Col>
+                <Col xs={6} sm={6} md={3} lg={3} xl={3} className="countdown-cell">
+                    <div className="value">{this.addLeadingZeros(countDown.min)}</div>
+                    <div className="unit">{countDown.min === 1 ? 'minute' : ' minutes'}</div>
+                </Col>
+                <Col xs={6} sm={6} md={3} lg={3} xl={3} className="countdown-cell">
+                    <div className="value">{this.addLeadingZeros(countDown.sec)}</div>
+                    <div className="unit">{countDown.sec === 1 ? 'second' : ' seconds'}</div>
+                </Col>
+            </Row>
         );
     }
 }

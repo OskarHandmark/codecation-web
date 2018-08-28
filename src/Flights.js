@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col } from 'react-flexbox-grid';
+import { Row, Col } from 'react-flexbox-grid';
 import Icon from 'react-icons-kit';
 import { takeOff } from 'react-icons-kit/entypo/takeOff';
 import { landing } from 'react-icons-kit/entypo/landing';
@@ -25,18 +25,20 @@ const Connection = () => <div className="flight-connection">
 </div>
 
 const FlightDetails = ({ icon, time, location }) => <div className="flight-details">
-    <div style={{ color: "#f99463" }}>
-        <Icon size={60} icon={icon} />
+    <div className="flight-icon">
+        <Icon size={50} icon={icon} />
     </div>
     <div className="time"> {time}</div>
-    <div> {location} </div>
+    <div className="city"> {location} </div>
 </div>
 
 const FlightInfo = ({ title, date, from, to }) =>
     <Col xs={12} sm={12} md={12} lg={6} xl={6}>
-        <div className="flight-info-container">
-            <div className="flight-type"> {title} </div>
-            <div className="flight-date"> {date} </div>
+        <div className="flight-info-container hovering">
+            <div className="flight-info-header">
+                <div className="flight-type"> {title} </div>
+                <div className="flight-date"> {date} </div>
+            </div>
             <div className="flight-info">
                 <FlightDetails icon={takeOff} {...from} />
                 <Connection />
@@ -53,7 +55,6 @@ class Flights extends Component {
                     .Flights
                 </div>
                 <div className="details">
-                    <Grid fluid>
                         <Row>
                             <FlightInfo
                                 title="Departure"
@@ -80,7 +81,6 @@ class Flights extends Component {
                                 }}
                             />
                         </Row>
-                    </Grid>
                 </div>
             </section>
         );

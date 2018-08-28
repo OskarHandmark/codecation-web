@@ -70,15 +70,15 @@ const agenda = [
 
 const DayItem = ({ header, events }) =>
     <div className="day-item-container">
-        <Icon icon={threeHorizontal} size={24} style={{ alignItems: 'flex-start', color: '#f99463' }} />
+        <Icon icon={threeHorizontal} size={24} style={{ alignItems: 'flex-start' }} />
         <div className="day-item-content">
-            <span className="day-header"> <Icon size={18} icon={calendar} /> {header} </span>
+            <span className="day-header"> <Icon size={16} icon={calendar} /> {header} </span>
             {events.map(({ time, title, author, desc }) =>
-                <div className="day-item">
+                <div key={title} className="day-item">
                     <div className="day-title"> {time && `${time} -`} {title}</div>
                     <div className="day-desc">
                         <span> {desc} </span>
-                        <span> {author} </span>
+                        <span className="day-author"> {author} </span>
                     </div>
                 </div>
             )}
@@ -91,10 +91,9 @@ class Agenda extends Component {
         return (
             <section className="agenda">
                 <div className="title">.Agenda</div>
-                <div className="agenda-container">
-                    <div className="vertical-line" />
+                <div className="agenda-container hovering">
                     <div className="day-items">
-                        {agenda.map(day => <DayItem header={day.header} events={day.events} />)}
+                        {agenda.map(day => <DayItem key={day.header} header={day.header} events={day.events} />)}
                     </div>
                 </div>
             </section>

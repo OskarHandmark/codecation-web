@@ -20,9 +20,9 @@ class Venue extends Component {
         return (
             <section className="venue" style={{ position: 'relative' }}>
                 <div className="title">.Venue</div>
-                <Grid fluid>
+                <Grid fluid className="section-container hovering">
                     <Row>
-                        {images.map(img => <Image src={img} />)}
+                        {images.map((img, index) => <Image key={`img-${index}`} src={img} />)}
                     </Row>
                 </Grid>
             </section >
