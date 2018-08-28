@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col } from 'react-flexbox-grid';
+import { Row, Col } from 'react-flexbox-grid';
 import Icon from 'react-icons-kit';
 import { takeOff } from 'react-icons-kit/entypo/takeOff';
 import { landing } from 'react-icons-kit/entypo/landing';

@@ -74,7 +74,7 @@ const DayItem = ({ header, events }) =>
         <div className="day-item-content">
             <span className="day-header"> <Icon size={16} icon={calendar} /> {header} </span>
             {events.map(({ time, title, author, desc }) =>
-                <div className="day-item">
+                <div key={title} className="day-item">
                     <div className="day-title"> {time && `${time} -`} {title}</div>
                     <div className="day-desc">
                         <span> {desc} </span>
@@ -93,7 +93,7 @@ class Agenda extends Component {
                 <div className="title">.Agenda</div>
                 <div className="agenda-container hovering">
                     <div className="day-items">
-                        {agenda.map(day => <DayItem header={day.header} events={day.events} />)}
+                        {agenda.map(day => <DayItem key={day.header} header={day.header} events={day.events} />)}
                     </div>
                 </div>
             </section>
