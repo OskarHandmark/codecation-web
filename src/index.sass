@@ -123,7 +123,7 @@ main
   -o-background-size: cover
   .splash-container
     background-color: rgba(22, 24, 29, 0.8)
-    padding: 50px 9vw
+    padding: 50px 7vw
     border-radius: 4px
   .splash-info-container
     .splash-info
@@ -131,6 +131,7 @@ main
       margin: 10px 0
       h4
         margin: 8px 5px 5px 10px
+        white-space: nowrap
     & div:last-child
       justify-content: flex-end
   .intro-container
@@ -337,6 +338,11 @@ section
   .author
     font-size: 16px
 
+@media (max-width: 500px)
+    .nav-content
+      margin: auto
+    .nav-content:nth-child(2)
+       display: none !important
 @media (max-width: 768px)
   .splash-grid
     background-color: rgba(22, 24, 29, 0.8) !important
@@ -346,5 +352,8 @@ section
       padding: 0 !important
       background-color: transparent;
     .splash-info
-      justify-content: flex-start !important
+      justify-content: center !important
       margin-bottom: 0 !important
+      margin: 10px auto !important
+    .intro-container
+      margin: 10px
