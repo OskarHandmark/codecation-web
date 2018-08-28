@@ -15,7 +15,7 @@
     "react-scripts": "1.1.4",
     "react-scrollable-anchor": "^0.6.1",
     "react-waypoint": "^8.0.3",
-    "serve": "^6.5.8"
+    "serve": "^10.0.0"
   },
   "scripts": {
     "start": "npm-run-all -p watch-css start-js",
