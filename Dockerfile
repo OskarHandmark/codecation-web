@@ -6,6 +6,7 @@ COPY . .
 
 RUN npm rebuild
 RUN npm install
+RUN npm run scss
 RUN npm run build
 
 EXPOSE 5000
