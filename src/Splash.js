@@ -29,7 +29,6 @@ class Splash extends React.Component {
                             <h4> CODECATION 2018 </h4>
                             <p className="intro-paragraph">
                                 Codecation is a motivating hackathon and a small-scale conference focused on exploring and sharing exciting ideas with like-minded engineers, all in comfort of our beautiful house in sunny Barcelona.
-                                Two-way knowledge sharing as every hacker is a speaker and every speaker hacks.
                                 The perfect chance to explore that new technology you have not had time for.
                             </p>
                             <div className="intro-quote">
